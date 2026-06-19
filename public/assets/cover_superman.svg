@@ -1,0 +1,48 @@
+<svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1e3a8a"/> <!-- royal blue -->
+      <stop offset="100%" stop-color="#020617"/> <!-- dark void -->
+    </radialGradient>
+    <filter id="shieldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="300" fill="url(#bgGrad)"/>
+  
+  <!-- Cosmic Starfield -->
+  <circle cx="60" cy="50" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="240" cy="60" r="1.5" fill="#fff" opacity="0.4"/>
+  <circle cx="80" cy="200" r="1" fill="#fff" opacity="0.2"/>
+  <circle cx="220" cy="180" r="1" fill="#fff" opacity="0.3"/>
+
+  <!-- Sun Rays behind Shield -->
+  <path d="M150 135 L50 35 M150 135 L250 35 M150 135 L150 35 M150 135 L50 135 M150 135 L250 135 M150 135 L50 235 M150 135 L250 235 M150 135 L150 235" stroke="#eab308" stroke-width="0.75" opacity="0.2"/>
+
+  <!-- Superman Shield -->
+  <!-- Outer Pentagon (Yellow field with Red border) -->
+  <g filter="drop-shadow(0 4px 10px rgba(0,0,0,0.6))">
+    <!-- Red outer polygon -->
+    <polygon points="150,55 235,95 205,185 150,215 95,185 65,95" fill="#ef4444" stroke="#b91c1c" stroke-width="2"/>
+    <!-- Yellow inner polygon -->
+    <polygon points="150,67 221,100 196,175 150,200 104,175 79,100" fill="#eab308"/>
+    
+    <!-- Red "S" symbol inside -->
+    <!-- Drawn precisely with curves -->
+    <path d="M110 115 C110 100 135 95 150 95 C175 95 185 105 185 115 C185 135 125 130 125 155 C125 170 150 178 165 178 C185 178 195 165 195 155 H180 C180 162 170 168 162 168 C150 168 140 160 140 150 C140 130 200 135 200 115 C200 95 175 85 150 85 C120 85 95 98 95 115 Z" fill="#ef4444"/>
+  </g>
+
+  <!-- Brand Tag -->
+  <rect x="15" y="15" width="45" height="20" rx="3" fill="#2563eb"/>
+  <text x="37.5" y="29" fill="#ffffff" font-family="'Impact', 'Arial Black', sans-serif" font-size="12" font-weight="900" text-anchor="middle">DC</text>
+  
+  <!-- Issue Tag -->
+  <text x="285" y="28" fill="#eab308" font-family="'Courier New', monospace" font-size="10" font-weight="bold" text-anchor="end">ISSUE #02</text>
+
+  <!-- Title Text -->
+  <text x="150" y="250" fill="#ef4444" font-family="'Impact', 'Arial Black', sans-serif" font-size="22" font-weight="900" text-anchor="middle" letter-spacing="0.5" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.8))">SUPERMAN</text>
+  <text x="150" y="272" fill="#eab308" font-family="'Trebuchet MS', sans-serif" font-size="9" font-weight="bold" text-anchor="middle" letter-spacing="2">MAN OF STEEL</text>
+</svg>

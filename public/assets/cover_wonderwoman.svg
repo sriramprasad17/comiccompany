@@ -1,0 +1,53 @@
+<svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="300" fill="url(#bgGrad)"/>
+  
+  <!-- Starfield background pattern -->
+  <g opacity="0.15" fill="#ffffff">
+    <polygon points="40,50 42,55 47,55 43,58 45,63 40,60 35,63 37,58 33,55 38,55"/>
+    <polygon points="260,60 262,65 267,65 263,68 265,73 260,70 255,73 257,68 253,65 258,65"/>
+    <polygon points="60,200 62,205 67,205 63,208 65,213 60,210 55,213 57,208 53,205 58,205"/>
+    <polygon points="240,190 242,195 247,195 243,198 245,203 240,200 235,203 237,198 233,195 238,195"/>
+  </g>
+
+  <!-- Lasso of Truth Glow Ring -->
+  <ellipse cx="150" cy="135" rx="75" ry="40" stroke="#fef08a" stroke-width="3" stroke-dasharray="8 6" fill="none" filter="url(#goldGlow)" opacity="0.8"/>
+  <ellipse cx="150" cy="135" rx="80" ry="43" stroke="#eab308" stroke-width="1" stroke-dasharray="12 4" fill="none" opacity="0.5"/>
+
+  <!-- Eagle Wings (W Crest) -->
+  <g filter="drop-shadow(0 4px 8px rgba(0,0,0,0.5))">
+    <!-- Outer Wing Wings -->
+    <path d="M50 110 L105 140 L150 100 L195 140 L250 110 L210 160 L150 130 L90 160 Z" fill="url(#goldGrad)" stroke="#854d0e" stroke-width="1.5"/>
+    <!-- Inner W wing shape -->
+    <path d="M80 130 L115 150 L150 120 L185 150 L220 130 L190 165 L150 142 L110 165 Z" fill="#fef08a" opacity="0.9"/>
+    <!-- Star on Chest -->
+    <polygon points="150,143 152,148 157,148 153,151 155,156 150,153 145,156 147,151 143,148 148,148" fill="#991b1b"/>
+  </g>
+
+  <!-- Brand Tag -->
+  <rect x="15" y="15" width="45" height="20" rx="3" fill="#2563eb"/>
+  <text x="37.5" y="29" fill="#ffffff" font-family="'Impact', 'Arial Black', sans-serif" font-size="12" font-weight="900" text-anchor="middle">DC</text>
+  
+  <!-- Issue Tag -->
+  <text x="285" y="28" fill="#eab308" font-family="'Courier New', monospace" font-size="10" font-weight="bold" text-anchor="end">ISSUE #04</text>
+
+  <!-- Title Text -->
+  <text x="150" y="248" fill="url(#goldGrad)" font-family="'Impact', 'Arial Black', sans-serif" font-size="22" font-weight="900" text-anchor="middle" letter-spacing="1" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.8))">WONDER WOMAN</text>
+  <text x="150" y="270" fill="#fef08a" font-family="'Trebuchet MS', sans-serif" font-size="9" font-weight="bold" text-anchor="middle" letter-spacing="2">SPIRIT OF TRUTH</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="iceGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0ea5e9"/> <!-- sky blue -->
+      <stop offset="60%" stop-color="#0284c7"/> <!-- darker blue -->
+      <stop offset="100%" stop-color="#0f172a"/> <!-- dark slate -->
+    </radialGradient>
+    <filter id="iceGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="300" fill="url(#iceGrad)"/>
+  
+  <!-- Frost Rays background -->
+  <path d="M0 0 L300 300 M300 0 L0 300 M150 0 V300 M0 150 H300" stroke="#bae6fd" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- Snowflake Outer Ring -->
+  <circle cx="150" cy="135" r="70" stroke="#e0f2fe" stroke-width="1" stroke-dasharray="4 6" opacity="0.25"/>
+
+  <!-- Central Snowflake -->
+  <g stroke="#f0f9ff" stroke-linecap="round" filter="url(#iceGlow)">
+    <!-- 6 Main Spikes -->
+    <!-- vertical -->
+    <line x1="150" y1="75" x2="150" y2="195" stroke-width="4.5"/>
+    <!-- diagonal 1 -->
+    <line x1="98" y1="105" x2="202" y2="165" stroke-width="4.5"/>
+    <!-- diagonal 2 -->
+    <line x1="98" y1="165" x2="202" y2="105" stroke-width="4.5"/>
+
+    <!-- Small chevron details on branches -->
+    <!-- Top & bottom -->
+    <path d="M140 95 L150 85 L160 95 M140 175 L150 185 L160 175" stroke-width="3" fill="none"/>
+    <path d="M143 110 L150 102 L157 110 M143 160 L150 168 L157 160" stroke-width="3" fill="none"/>
+    
+    <!-- Diagonal chevron details -->
+    <path d="M103 120 L102 110 L112 112 M188 158 L198 160 L197 150" stroke-width="3" fill="none"/>
+    <path d="M103 150 L102 160 L112 158 M188 120 L198 110 L197 120" stroke-width="3" fill="none"/>
+
+    <!-- Inner central hexagon -->
+    <polygon points="150,123 160,129 160,141 150,147 140,141 140,129" stroke-width="2" fill="none"/>
+    <!-- Center core crystal -->
+    <circle cx="150" cy="135" r="5" fill="#e0f2fe"/>
+  </g>
+
+  <!-- Sparkling frost stars -->
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="70" cy="70" r="1.5"/>
+    <circle cx="230" cy="75" r="2" filter="url(#iceGlow)"/>
+    <circle cx="65" cy="200" r="1"/>
+    <circle cx="225" cy="210" r="1.5"/>
+  </g>
+
+  <!-- Brand Tag -->
+  <rect x="15" y="15" width="55" height="20" rx="3" fill="#ca8a04"/>
+  <text x="42.5" y="29" fill="#ffffff" font-family="'Impact', 'Arial Black', sans-serif" font-size="11" font-weight="900" text-anchor="middle" letter-spacing="0.5">DISNEY</text>
+  
+  <!-- Issue Tag -->
+  <text x="285" y="28" fill="#e0f2fe" font-family="'Courier New', monospace" font-size="10" font-weight="bold" text-anchor="end">ISSUE #05</text>
+
+  <!-- Title Text -->
+  <text x="150" y="252" fill="#ffffff" font-family="'Impact', 'Arial Black', sans-serif" font-size="24" font-weight="900" text-anchor="middle" letter-spacing="1" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.5))">FROZEN</text>
+  <text x="150" y="272" fill="#bae6fd" font-family="'Trebuchet MS', sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle" letter-spacing="3">THE ICE QUEEN</text>
+</svg>

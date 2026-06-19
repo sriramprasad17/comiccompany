@@ -1,0 +1,48 @@
+<svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="jungleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14532d"/> <!-- jungle dark green -->
+      <stop offset="60%" stop-color="#052e16"/> <!-- deep forest green -->
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="300" fill="url(#jungleGrad)"/>
+  
+  <!-- Glowing Sunburst -->
+  <circle cx="150" cy="130" r="85" fill="#ca8a04" fill-opacity="0.1"/>
+
+  <!-- Compass / Sunburst Rays -->
+  <path d="M150 40 L150 220 M60 130 H240 M86 66 L214 194 M86 194 L214 66" stroke="#ca8a04" stroke-width="1" opacity="0.1"/>
+
+  <!-- Whip Silhouette (Curled) -->
+  <path d="M110 160 Q80 150 80 120 T110 90 T170 100 T180 140 T140 170 T110 150 Q120 130 140 130" stroke="#78350f" stroke-width="4.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <!-- Whip handle -->
+  <path d="M110 160 L95 180" stroke="#451a03" stroke-width="6.5" stroke-linecap="round"/>
+
+  <!-- Fedora Hat Silhouette -->
+  <g fill="#78350f" stroke="#451a03" stroke-width="1.5">
+    <!-- Hat Brim -->
+    <path d="M90 140 Q150 145 210 140 Q150 155 90 140 Z"/>
+    <!-- Hat Crown -->
+    <path d="M110 140 C110 120 120 105 150 105 C180 105 190 120 190 140 Z"/>
+    <!-- Hat Ribbon (Darker Brown) -->
+    <path d="M111 138 C115 130 125 128 150 128 C175 128 185 130 189 138 Z" fill="#451a03"/>
+  </g>
+
+  <!-- Brand Tag -->
+  <rect x="15" y="15" width="80" height="20" rx="3" fill="#15803d"/>
+  <text x="55" y="29" fill="#ffffff" font-family="'Impact', 'Arial Black', sans-serif" font-size="11" font-weight="900" text-anchor="middle" letter-spacing="0.5">ADVENTURE</text>
+  
+  <!-- Issue Tag -->
+  <text x="285" y="28" fill="#ca8a04" font-family="'Courier New', monospace" font-size="10" font-weight="bold" text-anchor="end">ISSUE #01</text>
+
+  <!-- Title Text -->
+  <text x="150" y="248" fill="url(#goldGrad)" font-family="'Impact', 'Arial Black', sans-serif" font-size="22" font-weight="900" text-anchor="middle" letter-spacing="0.5" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.8))">INDIANA JONES</text>
+  <text x="150" y="270" fill="#fef08a" font-family="'Trebuchet MS', sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle" letter-spacing="2">THE LOST COVENANT</text>
+</svg>
